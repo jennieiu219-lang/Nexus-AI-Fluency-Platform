@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus AI Fluency Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --surface-alt: #0f172a;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-strong: #7dd3fc;
+      --border: rgba(148, 163, 184, 0.2);
+      --success: #22c55e;
+      --warning: #f97316;
+      --danger: #ef4444;
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .page-shell {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 2.6vw, 3rem);
+      line-height: 1.05;
+    }
+
+    header p {
+      margin: 12px 0 0;
+      color: var(--text-muted);
+      max-width: 700px;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .banner {
+      margin: 24px 0;
+      padding: 18px 20px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 16px;
+      color: var(--text);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .controls,
+    .summary-grid,
+    .table-panel {
+      margin-top: 28px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .controls {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card,
+    .table-panel,
+    .metric-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+    }
+
+    .card label,
+    .control-row label {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      font-weight: 600;
+    }
+
+    .control-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .control-row input[type="file"] {
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: #111827;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      justify-content: space-between;
+    }
+
+    .toggle-row button {
+      border: 0;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 12px 16px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .toggle-row button.active {
+      background: rgba(56, 189, 248, 0.2);
+      color: var(--accent-strong);
+    }
+
+    .summary-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .metric-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .metric-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .metric-card p {
+      margin: 0;
+      font-size: clamp(1.85rem, 2.4vw, 2.2rem);
+      line-height: 1.05;
+      font-weight: 700;
+    }
+
+    .metric-card small {
+      display: block;
+      margin-top: 10px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .table-panel {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 560px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 16px 18px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    }
+
+    th {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    td {
+      color: var(--text);
+      font-size: 0.97rem;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      color: var(--text);
+      background: rgba(16, 185, 129, 0.16);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .footer {
+      margin-top: 34px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        text-align: left;
+      }
+
+      .toggle-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header>
+      <div>
+        <h1>Nexus AI Fluency Dashboard</h1>
+        <p>Analyze usage metrics, confirm opt-in status, and visualize AI adoption health with a data-driven dashboard designed for professional teams.</p>
+      </div>
+      <div class="status-pill" id="current-status">Status: Inactive</div>
+    </header>
+
+    <div class="banner">
+      <strong>⚠️ Disclaimer:</strong>
+      <span>Nexus AI outputs are probabilistic and may contain inaccuracies. Please verify critical data.</span>
+    </div>
+
+    <div class="controls">
+      <div class="card control-row">
+        <label for="csv-file">Upload usage data</label>
+        <input type="file" id="csv-file" accept=".csv" aria-label="Upload Nexus AI usage CSV" />
+        <small>Choose the `nexus_ai_staff_usage.csv` file to populate the dashboard.</small>
+      </div>
+
+      <div class="card">
+        <label>Data collection</label>
+        <div class="toggle-row">
+          <button id="opt-in-btn" class="active" type="button">Opt-In</button>
+          <button id="opt-out-btn" type="button">Opt-Out</button>
+        </div>
+        <small>The dashboard respects active opt-in status and suspends analysis when opt-out is selected.</small>
+      </div>
+
+      <div class="card">
+        <label>Masking mode</label>
+        <div class="toggle-row">
+          <button id="masking-on-btn" type="button">Masking ON</button>
+          <button id="masking-off-btn" class="active" type="button">Masking OFF</button>
+        </div>
+        <small>Enable regex-based masking for names, emails, and phone numbers before display.</small>
+      </div>
+    </div>
+
+    <div class="summary-grid" id="summary-grid">
+      <article class="metric-card">
+        <h3>Total records</h3>
+        <p id="metric-total">0</p>
+      </article>
+      <article class="metric-card">
+        <h3>Average fluency</h3>
+        <p id="metric-fluency">0.00</p>
+      </article>
+      <article class="metric-card">
+        <h3>Verified output</h3>
+        <p id="metric-verified">0%</p>
+      </article>
+      <article class="metric-card">
+        <h3>AI-Fluent users</h3>
+        <p id="metric-fluent">0%</p>
+      </article>
+      <article class="metric-card">
+        <h3>AI-Curious users</h3>
+        <p id="metric-curious">0%</p>
+      </article>
+      <article class="metric-card">
+        <h3>Hallucination reports</h3>
+        <p id="metric-hallucinations">0</p>
+      </article>
+    </div>
+
+    <section class="table-panel">
+      <h2>Tool category breakdown</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tool category</th>
+            <th>Records</th>
+            <th>Avg fluency</th>
+          </tr>
+        </thead>
+        <tbody id="category-table-body">
+          <tr><td colspan="3" style="color: var(--text-muted);">Upload data to render summary</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="footer">
+      <p>Designed for professional teams to monitor AI adoption safely and transparently. Masking mode ensures that no identifiable names are shown when active.</p>
+    </div>
+  </div>
+
+  <script>
+    const optInBtn = document.getElementById('opt-in-btn');
+    const optOutBtn = document.getElementById('opt-out-btn');
+    const maskingOnBtn = document.getElementById('masking-on-btn');
+    const maskingOffBtn = document.getElementById('masking-off-btn');
+    const statusPill = document.getElementById('current-status');
+    const csvInput = document.getElementById('csv-file');
+    const categoryBody = document.getElementById('category-table-body');
+
+    const metrics = {
+      total: document.getElementById('metric-total'),
+      fluency: document.getElementById('metric-fluency'),
+      verified: document.getElementById('metric-verified'),
+      fluent: document.getElementById('metric-fluent'),
+      curious: document.getElementById('metric-curious'),
+      hallucinations: document.getElementById('metric-hallucinations'),
+    };
+
+    let currentState = {
+      active: true,
+      masking: false,
+      rows: [],
+    };
+
+    const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+    const phoneRegex = /\b(?:\+?\d[\d\s\-().]{7,}\d)\b/g;
+
+    function setButtonState(activeButton, inactiveButton) {
+      activeButton.classList.add('active');
+      inactiveButton.classList.remove('active');
+    }
+
+    function updateStatus() {
+      statusPill.textContent = currentState.active ? 'Status: Active' : 'Status: Inactive';
+      if (!currentState.active) {
+        categoryBody.innerHTML = '<tr><td colspan="3" style="color: var(--text-muted);">Data collection is disabled. Enable opt-in to refresh the dashboard.</td></tr>';
+        Object.values(metrics).forEach(node => node.textContent = node.id === 'metric-total' ? '0' : node.id === 'metric-hallucinations' ? '0' : '0%');
+      }
+    }
+
+    function maskField(value, mapping) {
+      if (!value) return value;
+      let result = value;
+      Object.keys(mapping).forEach((rawName) => {
+        const token = mapping[rawName];
+        const escaped = rawName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        result = result.replace(new RegExp(`\\b${escaped}\\b`, 'g'), token);
+      });
+      result = result.replace(emailRegex, '[EMAIL]');
+      result = result.replace(phoneRegex, '[PHONE]');
+      return result;
+    }
+
+    function createNameMap(names) {
+      const unique = [...new Set(names.filter(Boolean))].sort();
+      const map = {};
+      unique.forEach((name, index) => {
+        map[name] = `[USER_${String(index + 1).padStart(2, '0')}]`;
+      });
+      return map;
+    }
+
+    function parseCsv(text) {
+      const lines = text.trim().split(/\r?\n/);
+      if (lines.length < 2) return [];
+      const headers = lines[0].split(',').map(header => header.trim());
+      return lines.slice(1).map(line => {
+        const values = line.split(',').map(value => value.trim());
+        return headers.reduce((record, key, idx) => {
+          record[key] = values[idx] ?? '';
+          return record;
+        }, {});
+      });
+    }
+
+    function summarize(rows) {
+      const categoryTotals = {};
+      let verifiedCount = 0;
+      let hallucinationCount = 0;
+      const scores = [];
+      const rawNames = [];
+
+      rows.forEach(row => {
+        const category = row.Tool_Category || 'Unknown';
+        const score = parseFloat(row.Fluency_Score) || 0;
+        scores.push(score);
+        rawNames.push(row.Staff_Name_Raw || '');
+
+        if (!categoryTotals[category]) {
+          categoryTotals[category] = { count: 0, scoreSum: 0 };
+        }
+        categoryTotals[category].count += 1;
+        categoryTotals[category].scoreSum += score;
+
+        const verifiedValue = String(row.Output_Verified || '').trim().toLowerCase();
+        if (verifiedValue === 'true' || verifiedValue === 'yes' || verifiedValue === '1') {
+          verifiedCount += 1;
+        } else {
+          hallucinationCount += 1;
+        }
+      });
+
+      const total = rows.length;
+      const averageFluency = total ? scores.reduce((sum, value) => sum + value, 0) / total : 0;
+      const curiousPct = total ? (scores.filter(score => score <= 4).length / total) * 100 : 0;
+      const fluentPct = total ? (scores.filter(score => score >= 8).length / total) * 100 : 0;
+      const verifiedPct = total ? ((total - hallucinationCount) / total) * 100 : 0;
+
+      return {
+        total,
+        averageFluency,
+        curiousPct,
+        fluentPct,
+        verifiedPct,
+        hallucinationCount,
+        categories: Object.entries(categoryTotals).sort((a, b) => a[0].localeCompare(b[0])).map(([name, data]) => ({
+          category: name,
+          count: data.count,
+          avgFluency: data.count ? data.scoreSum / data.count : 0,
+        })),
+        nameMap: createNameMap(rawNames),
+      };
+    }
+
+    function renderSummary(summary) {
+      metrics.total.textContent = summary.total;
+      metrics.fluency.textContent = summary.averageFluency.toFixed(2);
+      metrics.verified.textContent = `${summary.verifiedPct.toFixed(1)}%`;
+      metrics.fluent.textContent = `${summary.fluentPct.toFixed(1)}%`;
+      metrics.curious.textContent = `${summary.curiousPct.toFixed(1)}%`;
+      metrics.hallucinations.textContent = summary.hallucinationCount;
+
+      if (!currentState.active) {
+        categoryBody.innerHTML = '<tr><td colspan="3" style="color: var(--text-muted);">Data collection is disabled. Enable opt-in to refresh the dashboard.</td></tr>';
+        return;
+      }
+
+      categoryBody.innerHTML = summary.categories.map(item => `
+        <tr>
+          <td>${item.category}</td>
+          <td>${item.count}</td>
+          <td>${item.avgFluency.toFixed(2)}</td>
+        </tr>
+      `).join('');
+    }
+
+    function applyMasking(rows, nameMap) {
+      return rows.map(row => {
+        const maskedRow = { ...row };
+        maskedRow.Staff_Name_Raw = maskField(row.Staff_Name_Raw, nameMap);
+        maskedRow.User_Sentiment = maskField(row.User_Sentiment, nameMap);
+        return maskedRow;
+      });
+    }
+
+    csvInput.addEventListener('change', async (event) => {
+      const file = event.target.files?.[0];
+      if (!file || !currentState.active) return;
+
+      const text = await file.text();
+      const rows = parseCsv(text);
+      const summary = summarize(rows);
+
+      currentState.rows = summary.nameMap && currentState.masking ? applyMasking(rows, summary.nameMap) : rows;
+      renderSummary(summary);
+    });
+
+    optInBtn.addEventListener('click', () => {
+      currentState.active = true;
+      setButtonState(optInBtn, optOutBtn);
+      updateStatus();
+      if (csvInput.files.length > 0) {
+        csvInput.dispatchEvent(new Event('change'));
+      }
+    });
+
+    optOutBtn.addEventListener('click', () => {
+      currentState.active = false;
+      setButtonState(optOutBtn, optInBtn);
+      updateStatus();
+    });
+
+    maskingOnBtn.addEventListener('click', () => {
+      currentState.masking = true;
+      setButtonState(maskingOnBtn, maskingOffBtn);
+      if (csvInput.files.length > 0 && currentState.active) {
+        csvInput.dispatchEvent(new Event('change'));
+      }
+    });
+
+    maskingOffBtn.addEventListener('click', () => {
+      currentState.masking = false;
+      setButtonState(maskingOffBtn, maskingOnBtn);
+      if (csvInput.files.length > 0 && currentState.active) {
+        csvInput.dispatchEvent(new Event('change'));
+      }
+    });
+
+    updateStatus();
+  </script>
+</body>
+</html>
