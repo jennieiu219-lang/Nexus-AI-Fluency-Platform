@@ -1,0 +1,151 @@
+Timestamp,User_ID_Masked,Tool_Category,Fluency_Score,Output_Verified,User_Sentiment,Staff_Name_Raw
+2026-04-03 11:34:44,Staff_R_290,Image Gen,4,True,Drafting documentation for the new API integration.,Rose Edith
+2026-03-28 03:34:44,Staff_T_156,Image Gen,4,True,Configuring custom GPTs for team-specific research tasks.,Tom Edith
+2026-04-04 21:34:44,Staff_U_133,Research,1,False,Optimizing prompts for better creative writing output.,Uma Edith
+2026-04-02 04:34:44,Staff_R_740,Research,4,True,Troubleshooting hallucinations in legal document summaries.,Rose Edith
+2026-04-07 06:34:44,Staff_Q_903,Data Analysis,9,False,Automating calendar scheduling to reduce meeting fatigue.,Quinn Edith
+2026-04-04 11:34:44,Staff_C_787,Research,8,False,Exploring automated unit testing with AI agents.,Cinder Edith
+2026-03-25 20:34:44,Staff_G_725,Image Gen,2,False,Reviewing data privacy policies for LLM usage.,Gutter Edith
+2026-04-03 05:34:44,Staff_I_603,Data Analysis,3,True,Seeking guidance on using image generation for marketing assets.,Ivan Edith
+2026-04-08 07:34:44,Staff_M_333,Data Analysis,2,True,Optimizing prompts for better creative writing output.,Mordred Edith
+2026-03-24 18:34:44,Staff_Y_135,Image Gen,2,True,Automating calendar scheduling to reduce meeting fatigue.,Yuri Edith
+2026-04-03 14:34:44,Staff_N_860,Image Gen,10,True,Reviewing data privacy policies for LLM usage.,Noel Edith
+2026-04-04 11:34:44,Staff_R_589,Data Analysis,5,False,Reviewing data privacy policies for LLM usage.,Rose Edith
+2026-04-05 01:34:44,Staff_D_573,Admin Automation,3,False,Integrating AI tools into the CI/CD pipeline.,Dean Edith
+2026-04-04 11:34:44,Staff_C_252,LLM (Coding),5,False,Automating calendar scheduling to reduce meeting fatigue.,Cinder Edith
+2026-04-05 13:34:44,Staff_F_160,Admin Automation,10,True,Optimizing prompts for better creative writing output.,Flush Edith
+2026-03-30 10:34:44,Staff_Y_235,Data Analysis,6,True,Automating calendar scheduling to reduce meeting fatigue.,Yuri Edith
+2026-04-05 22:34:44,Staff_U_164,Admin Automation,7,False,Configuring custom GPTs for team-specific research tasks.,Uma Edith
+2026-03-31 11:34:44,Staff_S_260,LLM (Coding),1,True,Troubleshooting hallucinations in legal document summaries.,Sam Edith
+2026-03-28 15:34:44,Staff_X_760,Research,5,False,Optimizing prompts for better creative writing output.,Xander Edith
+2026-04-01 17:34:44,Staff_R_889,Research,4,True,Integrating AI tools into the CI/CD pipeline.,Rose Edith
+2026-04-06 11:34:44,Staff_N_656,LLM (Coding),10,True,Automating calendar scheduling to reduce meeting fatigue.,Noel Edith
+2026-04-07 00:34:44,Staff_Y_210,Data Analysis,1,False,Analyzing quarterly growth trends using Python interpreters.,Yuri Edith
+2026-04-01 01:34:44,Staff_E_432,Image Gen,7,False,Exploring automated unit testing with AI agents.,Even Edith
+2026-04-06 23:34:44,Staff_R_240,Data Analysis,7,False,Drafting documentation for the new API integration.,Rose Edith
+2026-03-26 06:34:44,Staff_P_103,Image Gen,3,True,Analyzing quarterly growth trends using Python interpreters.,Peter Edith
+2026-04-04 05:34:44,Staff_X_947,Research,8,True,Troubleshooting hallucinations in legal document summaries.,Xander Edith
+2026-03-30 21:34:44,Staff_R_345,Image Gen,10,True,Exploring automated unit testing with AI agents.,Rose Edith
+2026-03-29 03:34:44,Staff_A_628,Data Analysis,9,False,Integrating AI tools into the CI/CD pipeline.,Albert Edith
+2026-04-05 08:34:44,Staff_D_914,LLM (Coding),2,False,Automating calendar scheduling to reduce meeting fatigue.,Dean Edith
+2026-04-06 10:34:44,Staff_G_580,Image Gen,8,True,Configuring custom GPTs for team-specific research tasks.,Gutter Edith
+2026-03-31 18:34:44,Staff_M_506,Image Gen,7,True,Optimizing prompts for better creative writing output.,Mordred Edith
+2026-03-24 14:34:44,Staff_L_948,Admin Automation,10,False,Troubleshooting hallucinations in legal document summaries.,Liam Edith
+2026-03-24 20:34:44,Staff_R_232,Admin Automation,7,False,Reviewing data privacy policies for LLM usage.,Rose Edith
+2026-03-24 18:34:44,Staff_L_355,Research,6,False,Automating calendar scheduling to reduce meeting fatigue.,Liam Edith
+2026-03-29 12:34:44,Staff_X_125,Data Analysis,4,True,Configuring custom GPTs for team-specific research tasks.,Xander Edith
+2026-03-28 11:34:44,Staff_K_705,Research,2,True,Troubleshooting hallucinations in legal document summaries.,Kepler Edith
+2026-03-28 00:34:44,Staff_S_577,LLM (Coding),9,False,Optimizing prompts for better creative writing output.,Sam Edith
+2026-04-07 09:34:44,Staff_Y_861,Image Gen,7,True,Seeking guidance on using image generation for marketing assets.,Yuri Edith
+2026-03-30 04:34:44,Staff_Z_319,LLM (Coding),1,False,Analyzing quarterly growth trends using Python interpreters.,Zane Edith
+2026-03-26 17:34:44,Staff_F_250,Data Analysis,1,True,Optimizing prompts for better creative writing output.,Flush Edith
+2026-04-02 01:34:44,Staff_X_511,Admin Automation,7,False,Automating calendar scheduling to reduce meeting fatigue.,Xander Edith
+2026-03-31 17:34:44,Staff_S_760,Admin Automation,2,False,Automating calendar scheduling to reduce meeting fatigue.,Sam Edith
+2026-04-06 15:34:44,Staff_F_646,Data Analysis,2,True,Troubleshooting hallucinations in legal document summaries.,Flush Edith
+2026-04-05 07:34:44,Staff_G_271,Image Gen,7,True,Integrating AI tools into the CI/CD pipeline.,Gutter Edith
+2026-03-29 19:34:44,Staff_D_832,LLM (Coding),1,True,Seeking guidance on using image generation for marketing assets.,Dean Edith
+2026-04-02 18:34:44,Staff_F_476,Image Gen,6,True,Drafting documentation for the new API integration.,Flush Edith
+2026-04-06 05:34:44,Staff_G_905,Data Analysis,4,False,Automating calendar scheduling to reduce meeting fatigue.,Gutter Edith
+2026-04-05 21:34:44,Staff_W_780,Admin Automation,4,True,Seeking guidance on using image generation for marketing assets.,Will Edith
+2026-03-27 21:34:44,Staff_X_362,Data Analysis,2,True,Integrating AI tools into the CI/CD pipeline.,Xander Edith
+2026-04-04 00:34:44,Staff_A_526,Data Analysis,10,True,Configuring custom GPTs for team-specific research tasks.,Albert Edith
+2026-04-02 05:34:44,Staff_L_129,Data Analysis,7,False,Troubleshooting hallucinations in legal document summaries.,Liam Edith
+2026-03-26 11:34:44,Staff_F_204,Research,10,False,Seeking guidance on using image generation for marketing assets.,Flush Edith
+2026-04-03 21:34:44,Staff_W_219,Data Analysis,2,False,Troubleshooting hallucinations in legal document summaries.,Will Edith
+2026-03-24 16:34:44,Staff_N_150,Admin Automation,3,True,Troubleshooting hallucinations in legal document summaries.,Noel Edith
+2026-03-27 22:34:44,Staff_N_274,LLM (Coding),8,False,Integrating AI tools into the CI/CD pipeline.,Noel Edith
+2026-04-02 03:34:44,Staff_R_900,LLM (Coding),4,False,Seeking guidance on using image generation for marketing assets.,Rose Edith
+2026-03-31 11:34:44,Staff_R_578,LLM (Coding),7,True,Automating calendar scheduling to reduce meeting fatigue.,Rose Edith
+2026-04-01 08:34:44,Staff_Y_182,Data Analysis,8,True,Seeking guidance on using image generation for marketing assets.,Yuri Edith
+2026-04-02 12:34:44,Staff_F_273,Research,2,False,Exploring automated unit testing with AI agents.,Flush Edith
+2026-04-08 08:34:44,Staff_Q_117,LLM (Coding),8,False,Automating calendar scheduling to reduce meeting fatigue.,Quinn Edith
+2026-04-05 12:34:44,Staff_E_244,Admin Automation,3,False,Integrating AI tools into the CI/CD pipeline.,Even Edith
+2026-04-05 03:34:44,Staff_R_580,Admin Automation,10,True,Drafting documentation for the new API integration.,Rose Edith
+2026-03-27 02:34:44,Staff_Q_510,LLM (Coding),9,True,Automating calendar scheduling to reduce meeting fatigue.,Quinn Edith
+2026-04-05 23:34:44,Staff_P_302,Data Analysis,9,False,Analyzing quarterly growth trends using Python interpreters.,Peter Edith
+2026-03-28 12:34:44,Staff_I_136,Research,6,False,Integrating AI tools into the CI/CD pipeline.,Ivan Edith
+2026-03-25 12:34:44,Staff_M_971,Research,2,True,Exploring automated unit testing with AI agents.,Mordred Edith
+2026-03-27 19:34:44,Staff_N_610,Research,8,True,Configuring custom GPTs for team-specific research tasks.,Noel Edith
+2026-04-01 10:34:44,Staff_J_706,Research,5,True,Reviewing data privacy policies for LLM usage.,Juster Edith
+2026-03-25 13:34:44,Staff_V_742,Image Gen,10,True,Automating calendar scheduling to reduce meeting fatigue.,Victor Edith
+2026-04-03 23:34:44,Staff_U_101,Admin Automation,8,True,Automating calendar scheduling to reduce meeting fatigue.,Uma Edith
+2026-03-25 16:34:44,Staff_Y_514,Research,9,False,Analyzing quarterly growth trends using Python interpreters.,Yuri Edith
+2026-03-31 20:34:44,Staff_H_274,Admin Automation,1,True,Analyzing quarterly growth trends using Python interpreters.,Horner Edith
+2026-04-03 11:34:44,Staff_X_293,Research,8,False,Reviewing data privacy policies for LLM usage.,Xander Edith
+2026-04-06 16:34:44,Staff_J_131,LLM (Coding),2,True,Automating calendar scheduling to reduce meeting fatigue.,Juster Edith
+2026-04-04 10:34:44,Staff_K_666,Research,9,False,Troubleshooting hallucinations in legal document summaries.,Kepler Edith
+2026-03-31 05:34:44,Staff_B_480,Admin Automation,8,True,Reviewing data privacy policies for LLM usage.,Bereft Edith
+2026-03-28 20:34:44,Staff_O_505,Image Gen,10,True,Seeking guidance on using image generation for marketing assets.,Oscar Edith
+2026-04-05 05:34:44,Staff_L_332,Research,5,False,Drafting documentation for the new API integration.,Liam Edith
+2026-03-26 21:34:44,Staff_O_312,LLM (Coding),9,True,Analyzing quarterly growth trends using Python interpreters.,Oscar Edith
+2026-04-07 00:34:44,Staff_E_375,Research,5,True,Troubleshooting hallucinations in legal document summaries.,Even Edith
+2026-03-26 20:34:44,Staff_C_672,Image Gen,3,False,Automating calendar scheduling to reduce meeting fatigue.,Cinder Edith
+2026-03-31 11:34:44,Staff_V_670,Research,10,True,Configuring custom GPTs for team-specific research tasks.,Victor Edith
+2026-03-30 17:34:44,Staff_F_164,LLM (Coding),10,False,Optimizing prompts for better creative writing output.,Flush Edith
+2026-03-26 00:34:44,Staff_D_391,LLM (Coding),7,False,Seeking guidance on using image generation for marketing assets.,Dean Edith
+2026-04-01 10:34:44,Staff_G_598,Admin Automation,8,False,Automating calendar scheduling to reduce meeting fatigue.,Gutter Edith
+2026-04-05 19:34:44,Staff_J_211,Admin Automation,8,True,Reviewing data privacy policies for LLM usage.,Juster Edith
+2026-04-04 04:34:44,Staff_N_577,LLM (Coding),8,False,Exploring automated unit testing with AI agents.,Noel Edith
+2026-03-31 23:34:44,Staff_C_916,Data Analysis,6,False,Seeking guidance on using image generation for marketing assets.,Cinder Edith
+2026-03-28 12:34:44,Staff_S_575,Image Gen,3,True,Troubleshooting hallucinations in legal document summaries.,Sam Edith
+2026-04-07 08:34:44,Staff_L_772,Data Analysis,1,False,Troubleshooting hallucinations in legal document summaries.,Liam Edith
+2026-03-24 23:34:44,Staff_M_930,LLM (Coding),5,True,Automating calendar scheduling to reduce meeting fatigue.,Mordred Edith
+2026-03-29 21:34:44,Staff_T_753,Admin Automation,5,False,Automating calendar scheduling to reduce meeting fatigue.,Tom Edith
+2026-04-05 07:34:44,Staff_U_616,Research,4,False,Drafting documentation for the new API integration.,Uma Edith
+2026-03-25 12:34:44,Staff_C_251,Admin Automation,7,True,Optimizing prompts for better creative writing output.,Cinder Edith
+2026-03-26 14:34:44,Staff_O_463,Admin Automation,9,True,Configuring custom GPTs for team-specific research tasks.,Oscar Edith
+2026-04-02 12:34:44,Staff_V_524,Data Analysis,6,False,Drafting documentation for the new API integration.,Victor Edith
+2026-03-26 00:34:44,Staff_I_276,Data Analysis,3,True,Seeking guidance on using image generation for marketing assets.,Ivan Edith
+2026-04-03 05:34:44,Staff_P_920,Data Analysis,5,False,Seeking guidance on using image generation for marketing assets.,Peter Edith
+2026-03-25 11:34:44,Staff_C_539,LLM (Coding),1,False,Automating calendar scheduling to reduce meeting fatigue.,Cinder Edith
+2026-03-27 23:34:44,Staff_A_230,Research,9,True,Drafting documentation for the new API integration.,Albert Edith
+2026-04-04 07:34:44,Staff_A_467,Data Analysis,4,True,Drafting documentation for the new API integration.,Albert Edith
+2026-04-05 22:34:44,Staff_A_930,Research,3,False,Drafting documentation for the new API integration.,Albert Edith
+2026-03-26 11:34:44,Staff_P_912,Image Gen,3,False,Drafting documentation for the new API integration.,Peter Edith
+2026-03-25 02:34:44,Staff_Q_839,Research,6,True,Seeking guidance on using image generation for marketing assets.,Quinn Edith
+2026-03-26 00:34:44,Staff_Z_437,Research,8,True,Troubleshooting hallucinations in legal document summaries.,Zane Edith
+2026-04-01 06:34:44,Staff_D_728,Image Gen,6,False,Drafting documentation for the new API integration.,Dean Edith
+2026-03-30 10:34:44,Staff_M_495,Data Analysis,5,False,Analyzing quarterly growth trends using Python interpreters.,Mordred Edith
+2026-03-28 01:34:44,Staff_W_388,Admin Automation,4,True,Seeking guidance on using image generation for marketing assets.,Will Edith
+2026-03-27 06:34:44,Staff_S_803,Image Gen,5,False,Integrating AI tools into the CI/CD pipeline.,Sam Edith
+2026-04-04 02:34:44,Staff_X_106,Data Analysis,8,False,Automating calendar scheduling to reduce meeting fatigue.,Xander Edith
+2026-03-25 14:34:44,Staff_K_605,LLM (Coding),5,True,Seeking guidance on using image generation for marketing assets.,Kepler Edith
+2026-03-25 11:34:44,Staff_A_184,Data Analysis,8,True,Drafting documentation for the new API integration.,Albert Edith
+2026-04-06 07:34:44,Staff_X_796,Image Gen,9,False,Optimizing prompts for better creative writing output.,Xander Edith
+2026-03-27 19:34:44,Staff_I_712,LLM (Coding),1,False,Drafting documentation for the new API integration.,Ivan Edith
+2026-04-07 13:34:44,Staff_U_671,Admin Automation,4,True,Drafting documentation for the new API integration.,Uma Edith
+2026-04-04 20:34:44,Staff_M_268,Admin Automation,6,True,Configuring custom GPTs for team-specific research tasks.,Mordred Edith
+2026-04-04 06:34:44,Staff_Y_492,LLM (Coding),5,False,Configuring custom GPTs for team-specific research tasks.,Yuri Edith
+2026-04-07 04:34:44,Staff_Y_170,Research,4,True,Analyzing quarterly growth trends using Python interpreters.,Yuri Edith
+2026-03-29 01:34:44,Staff_L_930,LLM (Coding),3,False,Optimizing prompts for better creative writing output.,Liam Edith
+2026-04-04 08:34:44,Staff_O_197,Admin Automation,9,True,Analyzing quarterly growth trends using Python interpreters.,Oscar Edith
+2026-03-24 17:34:44,Staff_U_622,LLM (Coding),1,True,Exploring automated unit testing with AI agents.,Uma Edith
+2026-04-01 19:34:44,Staff_L_350,Data Analysis,3,True,Integrating AI tools into the CI/CD pipeline.,Liam Edith
+2026-03-24 23:34:44,Staff_K_681,LLM (Coding),3,True,Drafting documentation for the new API integration.,Kepler Edith
+2026-04-03 05:34:44,Staff_T_715,Research,10,True,Seeking guidance on using image generation for marketing assets.,Tom Edith
+2026-04-02 00:34:44,Staff_A_909,Image Gen,7,False,Exploring automated unit testing with AI agents.,Albert Edith
+2026-03-26 13:34:44,Staff_K_418,Data Analysis,5,False,Troubleshooting hallucinations in legal document summaries.,Kepler Edith
+2026-03-26 11:34:44,Staff_H_582,Data Analysis,8,True,Configuring custom GPTs for team-specific research tasks.,Horner Edith
+2026-03-30 16:34:44,Staff_V_205,LLM (Coding),3,True,Reviewing data privacy policies for LLM usage.,Victor Edith
+2026-04-08 06:34:44,Staff_U_881,Admin Automation,10,False,Analyzing quarterly growth trends using Python interpreters.,Uma Edith
+2026-03-27 23:34:44,Staff_S_386,LLM (Coding),3,True,Optimizing prompts for better creative writing output.,Sam Edith
+2026-03-29 14:34:44,Staff_F_527,Image Gen,7,False,Troubleshooting hallucinations in legal document summaries.,Flush Edith
+2026-03-25 22:34:44,Staff_A_654,Research,10,True,Integrating AI tools into the CI/CD pipeline.,Albert Edith
+2026-03-30 06:34:44,Staff_K_642,LLM (Coding),5,True,Automating calendar scheduling to reduce meeting fatigue.,Kepler Edith
+2026-03-25 18:34:44,Staff_Q_666,Data Analysis,8,True,Troubleshooting hallucinations in legal document summaries.,Quinn Edith
+2026-04-01 10:34:44,Staff_Q_520,LLM (Coding),5,True,Drafting documentation for the new API integration.,Quinn Edith
+2026-03-24 20:34:44,Staff_Q_995,LLM (Coding),1,True,Automating calendar scheduling to reduce meeting fatigue.,Quinn Edith
+2026-03-26 08:34:44,Staff_M_537,Research,4,False,Optimizing prompts for better creative writing output.,Mordred Edith
+2026-03-30 20:34:44,Staff_J_299,LLM (Coding),3,False,Integrating AI tools into the CI/CD pipeline.,Juster Edith
+2026-04-04 18:34:44,Staff_K_150,Research,7,True,Analyzing quarterly growth trends using Python interpreters.,Kepler Edith
+2026-03-26 10:34:44,Staff_C_632,LLM (Coding),10,False,Drafting documentation for the new API integration.,Cinder Edith
+2026-04-02 05:34:44,Staff_T_952,Admin Automation,3,True,Analyzing quarterly growth trends using Python interpreters.,Tom Edith
+2026-04-05 07:34:44,Staff_K_348,Admin Automation,5,False,Automating calendar scheduling to reduce meeting fatigue.,Kepler Edith
+2026-04-05 01:34:44,Staff_A_506,Admin Automation,10,False,Analyzing quarterly growth trends using Python interpreters.,Albert Edith
+2026-04-05 05:34:44,Staff_F_197,Data Analysis,7,True,Configuring custom GPTs for team-specific research tasks.,Flush Edith
+2026-04-04 12:34:44,Staff_R_943,Data Analysis,5,False,Configuring custom GPTs for team-specific research tasks.,Rose Edith
+2026-03-30 05:34:44,Staff_Y_903,Admin Automation,3,False,Reviewing data privacy policies for LLM usage.,Yuri Edith
+2026-03-27 07:34:44,Staff_B_124,LLM (Coding),9,False,Configuring custom GPTs for team-specific research tasks.,Bereft Edith
+2026-03-29 00:34:44,Staff_J_700,Data Analysis,9,False,Troubleshooting hallucinations in legal document summaries.,Juster Edith
+2026-03-25 03:34:44,Staff_V_459,Admin Automation,3,False,Reviewing data privacy policies for LLM usage.,Victor Edith
+2026-04-06 19:34:44,Staff_S_380,Data Analysis,7,False,Analyzing quarterly growth trends using Python interpreters.,Sam Edith
